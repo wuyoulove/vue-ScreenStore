@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>事件统计分析</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/eventStatistics.css">
+  <link rel="stylesheet" href="./css/htools.select.skin.css">
+</head>
+
+<body>
+  <div id="app" class="big-screen-wrap">
+    <div class="screen-head">
+      <h1 class="title">桂林市矛盾纠纷事件统计及分析</h1>
+
+      <!-- 云图选择 -->
+      <div class="_htools-selec-box">
+        <label>
+          <select id="myselect">
+            <option value="1">事件统计分析</option>
+            <option value="2">户籍人口数据云图分析</option>
+            <option value="3">实有房屋数据云图分析</option>
+            <option value="4">特殊人群数据云图分析</option>
+            <option value="5">重点青少年数据云图分析</option>
+            <option value="6">两新组织数据云图分析</option>
+            <option value="7">治安管理排查统计云图分析</option>
+            <option value="8">矛盾排查纠纷调处云图分析</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- 显示时间 -->
+      <div class="times" id="times">
+        <span class="year fb"></span><span class="fw">年</span>
+        <span class="month fb"></span><span class="fw">月</span>
+        <span class="day fb"></span><span class="fw">日</span>
+        <span class="hour fb"></span><span class="fw">:</span>
+        <span class="minute fb"></span><span class="fw">:</span>
+        <span class="second fb"></span>
+      </div>
+    </div>
+
+    <div class="screen-cont">
+      <div class="cont-item h-item s-item handling-situation">
+        <div class="item-head">
+          <h3 class="title">事件办理情况</h3>
+        </div>
+        <div class="item-cont">
+          <div>
+            <p>待办事件</p>
+            <p class="count"><span>1</span><span>2</span><span>3</span><span>4</span>人</p>
+            <p class="proportion">占30%</p>
+          </div>
+          <div>
+            <p>在办事件</p>
+            <p class="count"><span>1</span><span>2</span><span>3</span><span>4</span>人</p>
+            <p class="proportion">占40%</p>
+          </div>
+          <div>
+            <p>已办结事件</p>
+            <p class="count"><span>1</span><span>2</span><span>3</span><span>4</span>人</p>
+            <p class="proportion">占30%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cont-item h-item m-item event-classify">
+        <div class="item-head">
+          <h3 class="title">事件分类</h3>
+
+          <div class="head-select-box">
+            <div class="select-wrap">
+              <select class="select" name="">
+                <option value="1">桂林市</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+        <div class="item-cont">
+          <div id="eventClassify" class="cont-box"></div>
+
+          <div class="data-list-wrap">
+            <table class="data-list-table">
+              <thead>
+                <tr>
+                  <th>类型</th>
+                  <th>数量</th>
+                  <th>占比</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="dot"></span>矛盾纠纷</td>
+                  <td>1080人</td>
+                  <td>35%</td>
+                </tr>
+                <tr>
+                  <td><span class="dot"></span>治安安全隐患</td>
+                  <td>771人</td>
+                  <td>25%</td>
+                </tr>
+                <tr>
+                  <td><span class="dot"></span>民生服务</td>
+                  <td>1234人</td>
+                  <td>40%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="cont-item h-item event-sta-analysis">
+        <div class="item-head">
+          <h3 class="title">事件统计分析</h3>
+        </div>
+        <div class="item-cont">
+          <div class="cont-top">
+            <div class="tab-box">
+              <span class="tab-item active" data-tab="1">矛盾纠纷</span>
+              <span class="tab-item" data-tab="2">治安安全隐患</span>
+              <span class="tab-item" data-tab="3">民生服务</span>
+            </div>
+          </div>
+          <div id="eventStaAnalysis" class="cont-box"></div>
+        </div>
+      </div>
+
+      <div class="cont-item events-monthly-ratio">
+        <div class="item-head">
+          <h3 class="title">矛盾纠纷事件年同比</h3>
+
+          <div class="head-select-box">
+            <div class="select-wrap">
+              <select class="select type" name="">
+                  <option value="1">同比增长率</option>
+                  <option value="2">环比增长率</option>
+                </select>
+              </div>
+          </div>
+        </div>
+        <div class="item-cont">
+          <div class="cont-top">
+            <div class="cont-select-box">
+              小类：
+              <div class="select-wrap">
+                <select class="select classify" name="">
+                    <option value="1">全部</option>
+                    <option value="2">小类1</option>
+                    <option value="3">小类2</option>
+                  </select>
+                </div>
+            </div>
+
+            <div class="tab-box">
+              <span class="tab-item active" data-tab="1">矛盾纠纷</span>
+              <span class="tab-item" data-tab="2">治安安全隐患</span>
+              <span class="tab-item" data-tab="3">民生服务</span>
+            </div>
+          </div>
+          <div id="eventsMonthlyRatio" class="cont-box"></div>
+        </div>
+      </div>
+
+      <div class="cont-item">
+        <div class="item-head">
+          <h3 class="title">职能部门事件办理情况</h3>
+
+          <div class="head-select-box">
+            <div class="select-wrap">
+              <select class="select" name="">
+                  <option value="1">桂林市</option>
+                </select>
+              </div>
+            <div class="select-wrap">
+              <select class="select" name="">
+                  <option value="1">默认某职能部门</option>
+                </select>
+              </div>
+          </div>
+        </div>
+        <div class="item-cont">
+          <div id="funDepartEvents" class="cont-box"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./js/jquery-1.8.0.min.js"></script>
+  <script src="./js/echarts.min.js"></script>
+  <script src="./js/resetScreenSize.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/eventStatistics.js"></script>
+  <script src="./js/jquery.htools.select.js"></script>
+</body>
+
+</html>

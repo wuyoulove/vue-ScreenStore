@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/wanningScreen.css" />
+  </head>
+
+  <body>
+    <div class="wanningScreen" id="app">
+      <div class="topWord"></div>
+      <div class="wanningScreen-content clr">
+        <div class="wanningScreen-left fl hidden">
+          <div class="wanningScreen-left-frist clr">
+            <div class="numSum-cur"></div>
+            <div class="populationSum fl numSum">
+              <p class="numTil1">人口总数</p>
+              <p class="num">54,321万</p>
+            </div>
+            <div class="wangeySum fl numSum">
+              <p class="numTil2">网格员总数</p>
+              <p class="num">54,321万</p>
+            </div>
+            <div class="floorSum fl numSum">
+              <p class="numTil3">总楼栋房屋数</p>
+              <p class="num">54,321万</p>
+            </div>
+            <div class="probeSum fl numSum">
+              <p class="numTil1">探头总数</p>
+              <p class="num">321万</p>
+            </div>
+          </div>
+          <div class="wanningScreen-left-second">
+            <p class="dataTil">实有人口</p>
+            <div class="actual-population">
+              <div class="actual-warp clr">
+                <div class="people-all_1 fl">
+                  <p class="num-til">户籍人口</p>
+                  <p class="people-num">123,4</p>
+                </div>
+                <div class="people-all_2 fl">
+                  <p class="num-til">流动人口</p>
+                  <p class="people-num">45,222</p>
+                </div>
+                <div class="people-all_1 fl">
+                  <p class="num-til">留守人员</p>
+                  <p class="people-num">1,222</p>
+                </div>
+                <div class="people-all_2 fl">
+                  <p class="num-til">境外人员</p>
+                  <p class="people-num">1,223</p>
+                </div>
+                <div class="people-all_1 fl">
+                  <p class="num-til">出租屋</p>
+                  <p class="people-num">42,2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wanningScreen-left-three">
+            <p class="dataTil">校园及周边情况</p>
+            <div class="school-case">
+              <div class="item-case1 fl itemFrist">
+                <div class="item-case_ico1 fl"></div>
+                <div class="item-case_content fl">
+                  <p class="item-case-til">学校总数</p>
+                  <p class="item-case-num">142所</p>
+                </div>
+              </div>
+              <div class="item-case1 fl">
+                <div class="item-case_ico2 fl"></div>
+                <div class="item-case_content fl">
+                  <p class="item-case-til">公办学校数</p>
+                  <p class="item-case-num">98所</p>
+                </div>
+              </div>
+              <div class="item-case1 fl">
+                <div class="item-case_ico3 fl"></div>
+                <div class="item-case_content fl">
+                  <p class="item-case-til">民办学校数</p>
+                  <p class="item-case-num">43所</p>
+                </div>
+              </div>
+              <div class="item-case itemFrist fl">
+                <div class="item-case_ico4 fl"></div>
+                <div class="item-case_content fl">
+                  <p class="item-case-til">学生人数</p>
+                  <p class="item-case-num">64.2万人</p>
+                </div>
+              </div>
+              <div class="item-case fl">
+                <div class="item-case_ico6 fl"></div>
+                <div class="item-case_content fl">
+                  <p class="item-case-til">保安人数</p>
+                  <p class="item-case-num">15万</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wanningScreen-left-four">
+            <p class="dataTil">特殊人群</p>
+            <div id="SpePopulation"></div>
+          </div>
+        </div>
+        <div class="wanningScreen-mid fl hidden">
+          <div class="wanning-Cmap" id="wanningMap"></div>
+          <div class="go-back">返回</div>
+          <div class="recentNews">
+            <p class="dataTil">最新动态</p>
+            <div class="events-title">
+              <span>类型</span>
+              <span>案件描述</span>
+              <span>地址</span>
+              <span>上报时间</span>
+            </div>
+            <div class="txtMarquee-top">
+              <div class="bd">
+                <ul class="infoList">
+                  <li>
+                    <span title="民事纠纷">民事纠纷</span>
+                    <span title="白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放">白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放</span>
+                    <span title="镇北社区/第一网格/花园小区">镇北社区/第一网格/花园小区</span>
+                    <span title="2018/11/14 10:45:45">2018/11/14 10:45:45</span>
+                  </li>
+                  <li>
+                    <span title="民事纠纷">民事纠纷</span>
+                    <span title="白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放">白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放</span>
+                    <span title="镇北社区/第一网格/花园小区">镇北社区/第一网格/花园小区</span>
+                    <span title="2018/11/14 10:45:45">2018/11/14 10:45:45</span>
+                  </li>
+                  <li>
+                    <span title="民事纠纷">民事纠纷</span>
+                    <span title="白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放">白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放</span>
+                    <span title="镇北社区/第一网格/花园小区">镇北社区/第一网格/花园小区</span>
+                    <span title="2018/11/14 10:45:45">2018/11/14 10:45:45</span>
+                  </li>
+                  <li>
+                    <span title="民事纠纷">民事纠纷</span>
+                    <span title="白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放">白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放</span>
+                    <span title="镇北社区/第一网格/花园小区">镇北社区/第一网格/花园小区</span>
+                    <span title="2018/11/14 10:45:45">2018/11/14 10:45:45</span>
+                  </li>
+                  <li>
+                    <span title="民事纠纷">民事纠纷</span>
+                    <span title="白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放">白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放</span>
+                    <span title="镇北社区/第一网格/花园小区">镇北社区/第一网格/花园小区</span>
+                    <span title="2018/11/14 10:45:45">2018/11/14 10:45:45</span>
+                  </li>
+                  <li>
+                    <span title="民事纠纷">民事纠纷</span>
+                    <span title="白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放">白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放</span>
+                    <span title="镇北社区/第一网格/花园小区">镇北社区/第一网格/花园小区</span>
+                    <span title="2018/11/14 10:45:45">2018/11/14 10:45:45</span>
+                  </li>
+                  <li>
+                    <span title="民事纠纷">民事纠纷</span>
+                    <span title="白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放">白木街河道花园小区车辆乱停乱放白木街河道花园小区车辆乱停乱放</span>
+                    <span title="镇北社区/第一网格/花园小区">镇北社区/第一网格/花园小区</span>
+                    <span title="2018/11/14 10:45:45">2018/11/14 10:45:45</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wanningScreen-right fl">
+          <div class="wanningScreen-right-frist">
+            <p class="dataTil">事件类型占比图</p>
+            <div id="Event-type"></div>
+          </div>
+          <div class="wanningScreen-right-sencond">
+            <p class="dataTil">矛盾纠纷排查趋势分析</p>
+            <div class="dispute-frist clr">
+              <div class="disputeData-num fl">
+                <p class="dispute-item">
+                  <span class="dispute-item-til">上报事件总数</span>
+                  <span class="dispute-item-num">2345件</span>
+                </p>
+                <p class="dispute-item">
+                  <span class="dispute-item-til">上报事件总数</span>
+                  <span class="dispute-item-num">2345件</span>
+                </p>
+                <p class="dispute-item">
+                  <span class="dispute-item-til">上报事件总数</span>
+                  <span class="dispute-item-num">2345件</span>
+                </p>
+              </div>
+              <div class="banli-tate fl">
+                <p class="rate-til">办理率</p>
+                <div id="banli"></div>
+              </div>
+              <div class="banjie-tate fl">
+                <p class="rate-til">办结率</p>
+                <div id="banjie"></div>
+              </div>
+            </div>
+            <div class="dispute-sencond" id="disputeLine"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!--不能用过高版本的jq-->
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+  <script type="text/javascript" src="js/reset.js" ></script>
+  <script type="text/javascript" src="js/echarts.min.js"></script>
+  <script type="text/javascript" src="js/wanningScreen.js"></script>
+  <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" ></script>
+  <script type="text/javascript" src="js/echart-map1.js" ></script>
+  <script type="text/javascript" src="js/cityMap.js" ></script>
+   //列表滚动
+  <script type="text/javascript">
+    jQuery(".txtMarquee-top").slide({
+      mainCell: ".bd ul",
+      autoPlay: true,
+      effect: "topMarquee",
+      vis: 3,
+      interTime: 100
+    });
+  </script>
+</html>

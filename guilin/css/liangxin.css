@@ -1,0 +1,213 @@
+/* .screen-head .title {
+    height: 100%;
+    background: url("../images/lx_tit.png") center center no-repeat;
+    background-size: auto 100%;
+    font-size: 0;
+}
+.screen-head .sc_title {
+    height: 100%;
+    background: url("../images/sc_tit.png") center center no-repeat;
+    background-size: auto 100%;
+    font-size: 0;
+}
+.screen-head .teen_title {
+    height: 100%;
+    background: url("../images/teenager_tit.png") center center no-repeat;
+    background-size: auto 100%;
+    font-size: 0;
+} */
+/* 副标题头部样式 */
+.sm_title {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    background: -webkit-linear-gradient(transparent, #428af7); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(red, blue); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(red, blue); /* Firefox 3.6 - 15 */
+    background: linear-gradient(transparent, #428af7); /* 标准的语法 */
+    font-size: 22px;
+    color: #c8f3ff;
+}
+.sm_title img {
+    float: left;
+    margin: 12px 10px 0 20px;
+}
+/* 非公有制经济组织中企业类型  */
+
+.lx_chart {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+}
+.lx_chart_border {
+    border: solid 1px #50e9f9;
+}
+.lx_chart_left {
+    margin-right: 40px;
+}
+.lx_chart_left .container {
+    width: 658px;
+    height: 752px;
+}
+.lx_chart_right {
+    border: solid 1px #50e9f9;
+}
+.lx_chart_right .container {
+    width: 1140px;
+    height: 752px;
+}
+.container .pie_drawing {
+    width: 658px;
+    height: 320px;
+}
+.container .dataList {
+    margin: 60px auto 0;
+    width: 520px;
+    height: 315px;
+    overflow-y: auto;
+}
+.container .dataList::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.container .dataList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: #535353;
+}
+.container .dataList::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: #EDEDED;
+}
+.dataList .dataList_table {
+    width: 100%;
+    color: #fff;
+}
+.dataList .dataList_table tr td {
+    padding: 10px 15px;
+}
+.dataList .dataList_table tr th {
+    text-align: left;
+    text-indent: 15px;
+    padding-bottom: 8px;
+    color: #c8f3ff;
+}
+
+/* --------------------------------------------------------------------------------- */
+.areal_distribution, .insider {
+    width: 96%;
+    margin: 0 auto;
+}
+.areal_distribution .sm_title {
+    position: relative;
+}
+.areal_distribution {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.areal_content {
+    width: 1840px;
+    height: 337px;
+}
+.insider_content {
+    width: 1840px;
+    height: 322px;
+}
+
+/* 面包屑导航样式 */
+.cont-top {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.cont-top .select-box {
+    position: absolute;
+    width: 160px;
+    height: 28px;
+    margin-left: -80px;
+    top: 12px;
+    left: 50%;
+    font-size: 16px;
+    line-height: 28px;
+}
+.cont-top .tab-box {
+    position: absolute;
+    border: 1px solid #50e9f9;
+    border-radius: 3px;
+    overflow: hidden;
+    background: rgba(24,64,101,0.8);
+    top: 12px;
+    right: 20px;
+}
+.tab-box .tab-item {
+    padding: 0 15px;
+    float: left;
+    border-right: 1px solid #50e9f9;
+    line-height: 26px;
+    color: #497aa8;
+    text-align: center;
+    cursor: pointer;
+}
+.cont-top .tab-item.active {
+    background: #ff8e45;
+    color: #fff;
+    cursor: default;
+}
+
+
+
+/* ------------------------- 日期下拉 ------------------------------------ */
+.head-select-box {
+    position: absolute;
+    overflow: hidden;
+    right: 10px;
+    top: 5px;
+    width: 100px;
+    height: 40px;
+    float: left;
+}
+.head-select-box .select-wrap {
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+}
+.head-select-box .select {
+    background: transparent;
+    color: #fff;
+    line-height: 26px;
+    font-size: 16px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+.head-select-box .select option {
+    background: #143658;
+    font-size: 14px;
+    /* direction: ltr; */
+    padding: 30px 0;
+    width: 100%;
+    text-indent: 20px;
+    display: inline-block;
+    height: 40px;
+}
+.select-wrap:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 12px;
+    right: 16px;
+    z-index: 0;
+}
+
+/* -------------------------- 特殊人群帮扶 -------------------------------- */
+.special_crowd_body {
+    width: 1840px;
+    height: 792px;
+}

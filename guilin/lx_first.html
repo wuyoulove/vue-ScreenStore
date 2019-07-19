@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>桂林市两新组织数据云图分析</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/htools.select.skin.css">
+		<link rel="stylesheet" href="./css/liangxin.css" />
+	</head>
+	<body>
+		<div id="app" class="big-screen-wrap">
+			<div id="select" class="screen-head">
+				<h1 class="title">桂林市两新组织数据云图分析</h1>
+				<div class="_htools-selec-box">
+						<label>
+							<select id="myselect">
+								<option value="1">事件统计分析</option>
+								<option value="2">户籍人口数据云图分析</option>
+								<option value="3">实有房屋数据云图分析</option>
+								<option value="4">特殊人群数据云图分析</option>
+								<option value="5">重点青少年数据云图分析</option>
+								<option value="6">两新组织数据云图分析</option>
+								<option value="7">治安管理排查统计云图分析</option>
+								<option value="8">矛盾排查纠纷调处云图分析</option>
+							</select>
+						</label>
+				</div>
+	
+				<!-- 显示时间 -->
+				<div class="times" id="times">
+					<span class="year fb"></span><span class="fw">年</span>
+					<span class="month fb"></span><span class="fw">月</span>
+					<span class="day fb"></span><span class="fw">日</span>
+					<span class="hour fb"></span><span class="fw">:</span>
+					<span class="minute fb"></span><span class="fw">:</span>
+					<span class="second fb"></span>
+				</div>
+			</div>
+			
+			<div class="lx_chart">
+				<div class="lx_chart_left lx_chart_border">
+					<div class="sm_title">
+						<img src="./images/item_title_bg.png" alt="" />
+						<span>非公有制经济组织中企业类型</span>
+					</div>
+					<div class="container">
+						<div id="container_class" class="pie_drawing"></div>
+						<div class="dataList">
+							<table class="dataList_table">
+								<thead>
+									<tr>
+										<th>类型</th>
+										<th>数量</th>
+										<th>占比</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<span class="unique_col"></span>
+											个体工商户
+										</td>
+										<td>452400人</td>
+										<td>29%</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="unique_col"></span>
+											非国有控股混合所有制企业
+										</td>
+										<td>234000人</td>
+										<td>29%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				 <div class="lx_chart_right lx_chart_border"> <!-- lx_chart_border为边框样式 -->
+					<div class="sm_title">
+						<img src="../images/item_title_bg.png" alt="" />
+						<span>非公有制经济组织中企业所属行业比例</span>
+					</div>
+					<div id="lx_histogram" class="container">
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="page_btn page_btn_top">
+				<div id="btn_box" class="btn_box">
+					<span class="checked_span">
+						<a href="./lx_last.html">
+							<img src="./images/c_last.png" alt="">
+							上一页
+						</a>
+					</span>
+					<span>
+						<a href="javascript:;">
+							<img src="./images/next.png" alt="">
+							下一页
+						</a>
+					</span>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<script src="./js/jquery-1.8.0.min.js"></script>
+		<script src="./js/echarts.min.js"></script>
+		<script src="./js/common.js"></script>
+		<script src="./js/liangxin.js"></script>
+		<script src="./js/jquery.htools.select.js"></script>
+		<script src="./js/resetScreenSize.js"></script>
+	</body>
+</html>

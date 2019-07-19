@@ -1,0 +1,55 @@
+.page {
+    padding-top: 150px;
+    background-image: url(../../assets/img/bg2.png);
+  }
+.container {
+    margin-top: 0px;
+}
+.handle {
+    position: absolute;
+    right: 30px;
+    top: 100px;
+}
+.chunk {
+    width: 600px;
+    height: 930px;
+}
+.middle {
+    margin: 0 12px 0 8px;
+    width: 590px
+}
+.bar1,.pie {
+    width: 560px;
+    height: 230px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+}
+.ct1 {
+    margin-top: 90px;
+    padding-left: 10px;
+}
+.ct2 {
+    padding-left: 10px;
+}
+.classification {
+    height: 280px;
+    overflow: hidden;
+}
+.analyze-pie {
+    height: 220px;
+    padding-right: 30px;
+}
+.scroll-list-pic {
+    height: 510px;
+    overflow: hidden;
+}
+.list-bar {
+    height: 160px;
+}
+.ctlast {
+    margin-top: 0;
+}
+.line {
+    height: 350px;
+}

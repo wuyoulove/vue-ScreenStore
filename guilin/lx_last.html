@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>桂林市两新组织数据云图分析</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/liangxin.css" />
+		<link rel="stylesheet" href="./css/htools.select.skin.css">
+		
+	</head>
+	<body>
+		<div id="app" class="big-screen-wrap">
+			<div class="screen-head">
+				<h1 class="title">桂林市两新组织数据云图分析</h1>
+				<div class="_htools-selec-box">
+						<label>
+							<select id="myselect">
+								<option value="1">事件统计分析</option>
+								<option value="2">户籍人口数据云图分析</option>
+								<option value="3">实有房屋数据云图分析</option>
+								<option value="4">特殊人群数据云图分析</option>
+								<option value="5">重点青少年数据云图分析</option>
+								<option value="6">两新组织数据云图分析</option>
+								<option value="7">治安管理排查统计云图分析</option>
+								<option value="8">矛盾排查纠纷调处云图分析</option>
+							</select>
+						</label>
+				</div>
+	
+				<!-- 显示时间 -->
+				<div class="times" id="times">
+					<span class="year fb"></span><span class="fw">年</span>
+					<span class="month fb"></span><span class="fw">月</span>
+					<span class="day fb"></span><span class="fw">日</span>
+					<span class="hour fb"></span><span class="fw">:</span>
+					<span class="minute fb"></span><span class="fw">:</span>
+					<span class="second fb"></span>
+				</div>
+			</div>
+			
+      <div class="areal_distribution lx_chart_border">
+        <div class="sm_title">
+          <img src="./images/item_title_bg.png" alt="" />
+          <span>非公有制经济组织区域分布情况</span>
+        </div>
+        <div class="cont-top item-cont">
+          <div date-area="1" class="tab-box">
+            <span date-ind="1" class="tab-item active">全部</span>
+            <span date-ind="2" class="tab-item">具备建设党组织条件</span>
+            <span date-ind="3"  class="tab-item">有党组织</span>
+            <span date-ind="4"  class="tab-item">有工会</span>
+            <span date-ind="5"  class="tab-item">有团组织</span>
+            <span date-ind="6"  class="tab-item">有妇联组织</span>
+          </div>
+        </div>
+        <div id="areal_content" class="areal_content"></div>
+      </div>
+      <div class="insider lx_chart_border">
+        <div class="sm_title">
+          <img src="./images/item_title_bg.png" alt="" />
+          <span>非公有制经济组织内部成员情况</span>
+        </div>
+        <div class="cont-top item-cont">
+          <div date-area="2" class="tab-box ">
+            <span date-ind="1" class="tab-item active">全部</span>
+            <span date-ind="2" class="tab-item">党员教师</span>
+            <span date-ind="3" class="tab-item">工会会员数</span>
+            <span date-ind="4" class="tab-item">有工会</span>
+            <span date-ind="5" class="tab-item">团员数</span>
+            <span date-ind="6" class="tab-item">妇联成员数</span>
+          </div>
+        </div>
+        <div id="insider_content" class="insider_content"></div>
+      </div>
+
+			<div class="page_btn">
+				<div id="btn_box" class="btn_box">
+					<span>
+						<a href="javascript:;">
+							<img src="./images/last.png" alt="">
+							上一页
+						</a>
+					</span>
+					<span class="checked_span">
+						<a href="./lx_first.html">
+							<img src="./images/c_next.png" alt="">
+							下一页
+						</a>
+					</span>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<script src="./js/jquery-1.8.0.min.js"></script>
+		<script src="./js/echarts.min.js"></script>
+		<script src="./js/common.js"></script>
+    <script src="./js/jquery.htools.select.js"></script> <!-- 下拉菜单  -->
+    <script src="./js/liangxin_2.js"></script>
+		<script src="./js/resetScreenSize.js"></script>
+	</body>
+</html>

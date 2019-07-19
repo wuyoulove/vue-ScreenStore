@@ -1,0 +1,122 @@
+
+@charset "utf8";
+
+/*
+	reset.css
+	重置浏览器的常用样式
+	zwl 2017-6-11
+	@version 1.3.3
+*/
+
+html, body, div, section, header, span, /* structural elements 结构元素 */
+applet, object, iframe, /* 嵌入元素 */
+h1, h2, h3, h4, h5, h6,  p, q, blockquote, pre,
+a, abbr, address, acronym, big, cite, code,
+del, s, strike,
+dfn, em, font, img, ins, kbd, samp,
+small, strong, sub, sup, tt, var,
+dl, dt, dd, ul, li, /* list elements 列表元素 */
+fieldset, lengend, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td, 
+figure, button, input, textarea, hr,/* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+	margin: 0;
+	padding: 0;
+}
+address, cite, dfn, em, var,i { font-style: normal; } /* 将斜体扶正 */
+
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+
+ul { list-style: none; }
+a { text-decoration: none; }
+a:hover, a:active { outline: none; } /* 清除轮廓 */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	border: 0; /* 去除在 IE9/9 中出现的边框 */
+	-ms-interpolation-mode:bicubic; /*解决ie7下图片缩放的失真问题*/
+}
+
+.clr:after {
+	clear: both;
+	display: block;
+	content: '';
+}
+.fl{
+	float: left
+}
+.fr{
+	float: right
+}
+body {
+
+	font: 12px "Microsoft Yahei","HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
+	-ms-text-size-adjust: 100%; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	-webkit-font-smoothing: antialiased;
+}
+
+button, input {
+	font: inherit;
+}
+
+textarea{
+    resize: none;
+  }
+
+span.tableState{
+	display: inline-block;
+	border: 1px dashed #7d83ae;
+	border-radius: 2px;
+	text-align: center;
+	width: 92px;
+	height: 30px;
+	line-height: 30px;
+	color: #7d83ae;
+	font-size: 14px;
+}
+span.tableState.waiting{
+	border-color: #2c8bef;
+	color: #2c8bef;
+}
+span.tableState.pass{
+	border-color: #32ca0f;
+	color: #32ca0f;
+}
+span.tableState.fail{
+	border-color: #e63810;
+	color: #e63810;
+}
+
+
+span.grayLabel{
+    display: inline-block;
+    color: #fff;
+    padding: 1px 10px;
+    background: #8D90AA;
+    border-radius: 2px;
+  }
+/* 
+	备用样式
+	以下样式功能自行选择 使用
+
+	1. webkit 移动端选中去高光
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+	2. ios 设备自定义超出滚动条硬件流畅滚动
+	-webkit-overflow-scrolling: touch;
+
+	3.选择背景无色
+	::selection {
+		background-color: #ccc;
+		color: #fff;
+	}
+	::-moz-selection {
+		color: #fff;
+		background-color: #ccc;
+	}
+ */

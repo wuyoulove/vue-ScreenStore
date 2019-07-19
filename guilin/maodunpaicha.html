@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/maodunpaicha.css" />
+    <link rel="stylesheet" href="./css/htools.select.skin.css">
+   
+	</head>
+	<body>
+	  <div id="app" class="big-screen-wrap">
+	    <div class="screen-head">
+        <h1 class="title">桂林市矛盾纠纷事件统计及分析</h1>
+  
+        <!-- 云图选择 -->
+        <div class="_htools-selec-box">
+          <label>
+            <select id="myselect">
+              <option value="1">事件统计分析</option>
+              <option value="2">户籍人口数据云图分析</option>
+              <option value="3">实有房屋数据云图分析</option>
+              <option value="4">特殊人群数据云图分析</option>
+              <option value="5">重点青少年数据云图分析</option>
+              <option value="6">两新组织数据云图分析</option>
+              <option value="7">治安管理排查统计云图分析</option>
+              <option value="8">矛盾排查纠纷调处云图分析</option>
+            </select>
+          </label>
+        </div>
+  
+        <!-- 显示时间 -->
+        <div class="times" id="times">
+          <span class="year fb"></span><span class="fw">年</span>
+          <span class="month fb"></span><span class="fw">月</span>
+          <span class="day fb"></span><span class="fw">日</span>
+          <span class="hour fb"></span><span class="fw">:</span>
+          <span class="minute fb"></span><span class="fw">:</span>
+          <span class="second fb"></span>
+        </div>
+      </div>
+      <div class="screen-cont">
+        <div class="cont-item h-item l-item h-m-item events-monthly-ratio">
+          <div class="item-head">
+            <h3 class="title">治安重点安重点排查、整治情况</h3>
+          </div>
+          <div class="item-cont">
+            <div class="cont-top">
+              <div class="tab-box">
+                <span class="tab-item active" data-tab="1">排查调处情况</span>
+                <span class="tab-item" data-tab="2">事件规模情况</span>
+              </div>
+          </div>
+          <div id="contradiction" class="cont-box"></div>
+          </div>
+        </div>
+        <div class="cont-item h-item l-item h-s-item">
+          <div class="item-head">
+            <h3 class="title">矛盾纠纷排查调初情况</h3>
+            <div class="head-select-box">
+                <div class="select-wrap">
+                    <select class="select" name="">
+                      <option value="1">桂林全市</option>
+                      <option value="1">桂林全市</option>
+                    </select>
+                  </div>
+            </div>
+          </div>
+          <div class="item-cont" id="DisputeInvestigation">
+          </div>
+        </div>
+      </div>
+      <div class="page_btn">
+				<div id="btn_box" class="btn_box">
+					<span>
+						<a href="javascript:;">
+							<img src="images/last.png" alt="">
+							上一页
+						</a>
+					</span>
+					<span class="checked_span">
+						<a href="">
+							<img src="images/c_next.png" alt="">
+							下一页
+						</a>
+					</span>
+				</div>
+			</div>
+	  </div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+  <script type="text/javascript" src="js/echarts.min.js"></script>
+  <script type="text/javascript" src="js/resetScreenSize.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/maodunpaicha.js" ></script>
+  <script src="./js/jquery.htools.select.js"></script>
+</html>
